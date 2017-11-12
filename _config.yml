@@ -1,1 +1,5 @@
 theme: jekyll-theme-merlot
+plugins:
+  - jekyll-redirect-from
+
+redirect-from: assignment1/assignment1-starter-code
