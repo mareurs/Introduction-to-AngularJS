@@ -23,7 +23,7 @@
      <div class="container" ng-controller="As1Controller">
        <h1 >Lunch Checker</h1>
            <div class="form-group">
-               <input id="lunch-menu" type="text"
+               <input id="lunch-menu" type="text" style="border-color:{{healthyColor}};"
                placeholder="list comma separated dishes you usually have for lunch"
                class="form-control" ng-model="lunchMenu">
            </div>
@@ -31,7 +31,7 @@
                <button ng-click="btnCheckClicked()" class="btn btn-default">Check If Too Much</button>
            </div>
            <div class="form-group message" ng-model="HealthyStatus">
-             <h1>{{HealthyStatus}}</h1>
+             <h1 style="color:{{healthyColor}};">{{HealthyStatus}}</h1>
            </div>
      </div>
 
