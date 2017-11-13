@@ -1,13 +1,14 @@
 (function () {
   'use strict';
 
-  angular.module('assignment1',[]).
-  controller("as1Controller", as1Controller);
+  var module = angular.module('assignmentApp',[]);
+  //console.log(module);
+  module.controller('As1Controller', as1Controller);
 
   as1Controller.$inject = ['$scope'];
 
   function as1Controller($scope){
-    $scope.HealthyStatus = "test";
+    $scope.HealthyStatus = "";
     console.log("starting");
 
     $scope.btnCheckClicked = function(){
@@ -20,6 +21,7 @@
       }
     }
   }
+
 
   function countTokens(input){
     if(input){
@@ -34,5 +36,5 @@
     }
     return count;
   }
-  
+
 })();
