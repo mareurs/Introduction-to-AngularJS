@@ -2,7 +2,6 @@
   'use strict';
 
   angular.module('assignment1',[]).
-  //controller("as1Controller", ['$scope', as1Controller]);
   controller("as1Controller", as1Controller);
 
   as1Controller.$inject = ['$scope'];

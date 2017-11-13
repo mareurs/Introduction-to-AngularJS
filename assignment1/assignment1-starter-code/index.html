@@ -1,8 +1,7 @@
 <!doctype html>
-<html lang="en"  ng-app="assignment1">
+<html lang="en" >
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
-<script src="src/app.js"/>
   <head>
     <title>Lunch Checker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,22 +10,25 @@
       .message { font-size: 1.3em; font-weight: bold; }
     </style>
   </head>
-<body>
-   <div class="container" ng-controller="as1Controller">
-     <h1 >Lunch Checker</h1>
 
-         <div class="form-group">
-             <input id="lunch-menu" type="text"
-             placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control" ng-model="lunchMenu">
-         </div>
-         <div class="form-group" >
-             <button ng-click="btnCheckClicked()" class="btn btn-default">Check If Too Much</button>
-         </div>
-         <div class="form-group message" ng-model="HealthyStatus">
-           <h1>{{HealthyStatus}}</h1>
-         </div>
-   </div>
+  <script src="src/app.js"/> 
 
-</body>
+  <body ng-app="assignment1">
+     <div class="container" ng-controller="as1Controller">
+       <h1 >Lunch Checker</h1>
+
+           <div class="form-group">
+               <input id="lunch-menu" type="text"
+               placeholder="list comma separated dishes you usually have for lunch"
+               class="form-control" ng-model="lunchMenu">
+           </div>
+           <div class="form-group" >
+               <button ng-click="btnCheckClicked()" class="btn btn-default">Check If Too Much</button>
+           </div>
+           <div class="form-group message" ng-model="HealthyStatus">
+             <h1>{{HealthyStatus}}</h1>
+           </div>
+     </div>
+
+  </body>
 </html>
