@@ -2,7 +2,7 @@
 
 Please choose the right assignment.
 
-***[Assignment 1]***(/assignment1/assignment1-starter-code/index.html)
+***[Assignment 1]***(Introduction-to-AngularJS/assignment1/assignment1-starter-code/index.html)
 
 
 
