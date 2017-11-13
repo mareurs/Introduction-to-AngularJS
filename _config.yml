@@ -1,5 +1,2 @@
 theme: jekyll-theme-hacker
-plugins:
-  - jekyll-redirect-from
 
-redirect-from: assignment1/assignment1-starter-code
