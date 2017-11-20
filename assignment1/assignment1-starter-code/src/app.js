@@ -19,11 +19,10 @@
         } else {
           $scope.HealthyStatus = 'Enjoy!';
         }
-        $scope.healthyColor = 'green';
-      }
+        $scope.healthyColor = 'green';      
     } else {
       $scope.HealthyStatus = 'Please enter the data first';
-      $scope.healthyColor = "red";
+      $scope.healthyColor = 'red';
     }
   }
 
