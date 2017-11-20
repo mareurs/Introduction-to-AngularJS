@@ -20,25 +20,24 @@
           $scope.HealthyStatus = 'Enjoy!';
         }
         $scope.healthyColor = 'green';      
-    } else {
-      $scope.HealthyStatus = 'Please enter the data first';
-      $scope.healthyColor = 'red';
+      }else {
+        $scope.HealthyStatus = 'Please enter the data first';
+        $scope.healthyColor = 'red';
+      }
+    }
+
+    function countTokens(input){
+      if(input){
+        var values = input.split(",");
+        var count = 0;
+        values.forEach(function(value){
+          if(/\S/.test(value)){
+            count++;
+          }
+        });
+        console.log(count);
+      }
+      return count;
     }
   }
-
-
-  function countTokens(input){
-    if(input){
-      var values = input.split(",");
-      var count = 0;
-      values.forEach(function(value){
-        if(/\S/.test(value)){
-          count++;
-        }
-      });
-      console.log(count);
-    }
-    return count;
-  }
-
 })();
