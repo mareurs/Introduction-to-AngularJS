@@ -10,17 +10,20 @@
   function as1Controller($scope){
     $scope.HealthyStatus = "";
     console.log("starting");
-    $scope.HealthyStatus = 'Please enter the data first';
-    $scope.healthyColor = "red";
 
     $scope.btnCheckClicked = function(){
-      var count = countTokens($scope.lunchMenu);
-      if(count > 3){
-        $scope.HealthyStatus = 'Too much!';
-      } else {
-        $scope.HealthyStatus = 'Enjoy!';
+      if($scope.lunchMenu){
+        var count = countTokens($scope.lunchMenu);
+        if(count > 3){
+          $scope.HealthyStatus = 'Too much!';
+        } else {
+          $scope.HealthyStatus = 'Enjoy!';
+        }
+        $scope.healthyColor = 'green';
       }
-      $scope.healthyColor = 'green';
+    } else {
+      $scope.HealthyStatus = 'Please enter the data first';
+      $scope.healthyColor = "red";
     }
   }
 
