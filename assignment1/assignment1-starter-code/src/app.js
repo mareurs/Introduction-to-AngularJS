@@ -8,9 +8,8 @@
   as1Controller.$inject = ['$scope'];
 
   function as1Controller($scope){
-    $scope.HealthyStatus = "";
-    console.log("starting");
     $scope.HealthyStatus = '';
+    console.log("starting");
 
     $scope.btnCheckClicked = function(){
       if($scope.lunchMenu){
