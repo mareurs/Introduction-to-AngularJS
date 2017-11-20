@@ -10,6 +10,7 @@
   function as1Controller($scope){
     $scope.HealthyStatus = "";
     console.log("starting");
+    $scope.HealthyStatus = '';
 
     $scope.btnCheckClicked = function(){
       if($scope.lunchMenu){
